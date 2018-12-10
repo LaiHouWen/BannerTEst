@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--horizontal-->
+    <!--vertical-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banner 的使用"/>
+
+    <com.pax.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.pax.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        app:banner_layout="@layout/banner_d" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SubsamplingScaleImageView 大图片 放大缩小 的使用"/>
+
+    <Button
+        android:id="@+id/btn_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="相册选图"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="viewpager SubsamplingScaleImageView"
+        android:textSize="16sp" />
+</LinearLayout>
